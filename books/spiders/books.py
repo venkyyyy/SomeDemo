@@ -12,4 +12,6 @@ class BooksSpider(scrapy.Spider):
 
 
     def parse(self, response):
-          yield {'body':response.body}    
+          item= {'body':response.body}    
+          yield item
+
