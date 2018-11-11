@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from ..items import BooksItem
 
 
 class BooksSpider(scrapy.Spider):
@@ -12,5 +13,6 @@ class BooksSpider(scrapy.Spider):
 
 
     def parse(self, response):
-          item= BooksItem(body=response.body)
+          item= BooksItem()
+          item['body']=response.body
           yield item
