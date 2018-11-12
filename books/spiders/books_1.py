@@ -4,7 +4,7 @@ import scrapy
 logger = logging.getLogger('mycustomlogger')
 
 class BooksSpider(scrapy.Spider):
-    name = 'myspider'
+    name = 'myspider_1'
     #logger.info(url)
     logger.info('Hello World')
     def start_requests(self):
