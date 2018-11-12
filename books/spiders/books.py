@@ -8,7 +8,7 @@ logger = logging.getLogger('mycustomlogger')
 class BooksSpider(scrapy.Spider):
 
     name = 'myspider'
-    start_urls = ['https://scrapinghub.com']
+    #start_urls = ['https://scrapinghub.com']
 
-    def parse(self, response):
-        logger.info('Hello World')
+    #def parse(self, response):
+    logger.info('Hello World')
