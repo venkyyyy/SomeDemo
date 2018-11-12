@@ -11,7 +11,7 @@ class BooksSpider(scrapy.Spider):
         yield scrapy.Request(url='https://www.w3schools.com/', callback=self.parse)
 
     def parse(self, response):
-        page = response.url
+        page = response.headers
         logger.info(page)
         
     
