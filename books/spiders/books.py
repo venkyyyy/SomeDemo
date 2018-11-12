@@ -11,4 +11,4 @@ class BooksSpider(scrapy.Spider):
     start_urls = ['https://scrapinghub.com']
 
     def parse(self, response):
-        logger.info('Parse function called on %s', response.url)
+        logger.info('Hello World')
