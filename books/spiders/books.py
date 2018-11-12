@@ -11,8 +11,7 @@ class BooksSpider(scrapy.Spider):
         'https://www.google.co.in/search?q=Prime+Air+in+US-WA-Seattle&ibp=htl;jobs',
     ]
      for url in start_urls:
-            # We make a request to each url and call the parse function on the http response.
-			yield scrapy.Request(url=url, callback=self.parse)
+     	yield scrapy.Request(url=url, callback=self.parse)
 
 
     def parse(self, response):
