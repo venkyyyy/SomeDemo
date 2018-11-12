@@ -12,5 +12,6 @@ class BooksSpider(scrapy.Spider):
 
     def parse(self, response):
         page = response.url
+        logger.info(page)
         
     
