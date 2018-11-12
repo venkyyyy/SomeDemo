@@ -12,7 +12,7 @@ class BooksSpider(scrapy.Spider):
 
     def parse(self, response):
         logger.info('Parse function called on %s', response.url)
-        item= BooksItem()
-        item['body']=response.body
-        yield item
+        #item= BooksItem()
+        #item['body']=response.body
+        yield response.body
           
