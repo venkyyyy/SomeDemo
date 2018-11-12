@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from ..items import BooksItem
+import logging
 
 
 class BooksSpider(scrapy.Spider):
@@ -15,4 +16,6 @@ class BooksSpider(scrapy.Spider):
     def parse(self, response):
           item= BooksItem()
           item['body']=response.body
+          #self.log(" Entered !! ")
+          logging.warning("This is a warning")
           yield item
