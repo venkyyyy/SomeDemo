@@ -1,5 +1,7 @@
 import logging
 import scrapy
+from ..items import BooksItem
+
 
 logger = logging.getLogger('mycustomlogger')
 
@@ -10,3 +12,7 @@ class BooksSpider(scrapy.Spider):
 
     def parse(self, response):
         logger.info('Parse function called on %s', response.url)
+        item= BooksItem()
+        item['body']=response.body
+        yield item
+          
