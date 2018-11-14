@@ -8,5 +8,5 @@ class BooksSpider(scrapy.Spider):
     def parse(self, response):
         page = response.headers
         self.log("Hello World")
-        self.log(page)        
+        self.log('My ip : '%page)        
     
