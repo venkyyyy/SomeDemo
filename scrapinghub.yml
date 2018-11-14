@@ -3,4 +3,3 @@
 projects:
   default: 12345
   prod: 33333
-stack: scrapy:1.5.1-py3
