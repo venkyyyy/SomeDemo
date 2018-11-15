@@ -13,6 +13,6 @@ class MySpider(scrapy.Spider):
             )
 
     def parse(self, response):
-        yeild{
-          'body': response.body
-        }
+        yield{
+       'body':response.body
+       } 
